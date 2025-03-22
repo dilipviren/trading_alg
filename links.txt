@@ -1,0 +1,6 @@
+contains important urls for project work - delete later
+
+https://site.financialmodelingprep.com/developer/docs/stable#intraday-1-min
+https://site.financialmodelingprep.com/developer/docs/dashboard
+https://github.com/dilipviren/trading_alg
+https://chatgpt.com/c/67dab8d1-a084-8005-8cd3-dfc005024fc9
