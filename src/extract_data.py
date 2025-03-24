@@ -1,17 +1,21 @@
 import certifi
 import json
 import yaml
+from system_check import check_system
+
 try:
     from urllib.request import urlopen
 except ImportError:
     print('Error: Could not import urlopen from urllib.request')   
 
-key_path = '/Users/macbook/Mirror/trading_algorithm/config/api_key.yml'
-requests_path = '/Users/macbook/Mirror/trading_algorithm/config/request_urls.yml'
+if check_system() == 'macOS':
 
-test_url = 'https://financialmodelingprep.com/stable/historical-chart?symbol=AAPL&apikey={key}'
+    key_path = '/Users/macbook/Mirror/trading_algorithm/config/api_key.yml'
+    requests_path = '/Users/macbook/Mirror/trading_algorithm/config/request_urls.yml'
 
-test_url2 = "https://financialmodelingprep.com/stable/historical-price-eod/light?symbol=AAPL&from=2024-11-04&apikey={key}"
+else:
+    key_path = '/Users/macbook/Mirror/trading_algorithm/config/api_key.yml'
+    requests_path = '/Users/macbook/Mirror/trading_algorithm/config/request_urls.yml'
 
 
 def get_jsonparsed_data(url):
@@ -22,6 +26,10 @@ def get_jsonparsed_data(url):
 
 
 if __name__ == "__main__":
+
+    test_url = 'https://financialmodelingprep.com/stable/historical-chart?symbol=AAPL&apikey={key}'
+
+    test_url2 = "https://financialmodelingprep.com/stable/historical-price-eod/light?symbol=AAPL&from=2024-11-04&apikey={key}"
 
     fromdate = '2024-11-04'
     todate = '2025-02-05'
