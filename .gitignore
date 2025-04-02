@@ -1,0 +1,10 @@
+# ignore all logs
+*.log
+
+# ignore all .DS_Store files
+.DS_Store
+# ignore all .env files
+.env
+
+# ignore all temp folders
+temp/
