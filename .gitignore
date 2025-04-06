@@ -8,3 +8,6 @@
 
 # ignore all temp folders
 temp/
+
+# ignore all pychache files
+.pyc

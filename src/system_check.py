@@ -7,4 +7,4 @@ def check_system():
         return 'win'
 
 if __name__ == "__main__":
-    check_system()
+    print(check_system())
