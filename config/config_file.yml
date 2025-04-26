@@ -2,6 +2,10 @@ requests:
  eod : 'https://financialmodelingprep.com/stable/historical-price-eod/light?symbol={symbol}&from={from_date}&to={to_date}&apikey={key}'
  1min : 'https://financialmodelingprep.com/stable/historical-chart/1min?symbol={symbol}&apikey={key}'
  5min : 'https://financialmodelingprep.com/stable/historical-chart/5min?symbol={symbol}&apikey={key}'
+ forex : 'https://financialmodelingprep.com/api/v3/historical-price-full/{currencies}?apikey={key}'
+ forex_list : 'https://financialmodelingprep.com/stable/forex-list?apikey={key}'
+ forex_light : 'https://financialmodelingprep.com/stable/historical-price-eod/light?symbol={currencies}&from={from_date}&to={to_date}&apikey={key}'
+
 
 tickers:
   apple: AAPL

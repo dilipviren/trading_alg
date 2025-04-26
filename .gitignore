@@ -11,3 +11,6 @@ temp/
 
 # ignore all pychache files
 .pyc
+
+# ignore pycache
+__pycache__/
