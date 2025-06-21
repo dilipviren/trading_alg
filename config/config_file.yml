@@ -12,3 +12,12 @@ tickers:
 
 keys:
   stock_key: 'YX585dbl6mHbJX8gtLzESZ4MdpAdYfhg'
+
+columns:
+  stock_name: 'stock_name'
+  stock_symbol: 'stock_symbol'
+  stock_type: 'stock_type'
+  freq: 'freq'
+  from: 'from'
+  to: 'to'
+
