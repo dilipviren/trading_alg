@@ -64,8 +64,6 @@ def construct_urls(config_path: str=None, key_name: str=None, data_freq: str=Non
     final_urls = []
     api_key = config['keys'][key_name]
 
-    print(config['requests']['5min'])
-
     base_url = config['requests'][data_freq]
 
 
